@@ -157,4 +157,4 @@ Interestingly, the model on its own is slightly *more* expensive than having a p
 5. **The labels are visual ('-like'), not lab-confirmed.** The model should be validated against PCR-confirmed samples before its score is treated as a disease probability.
 6. **There may be farm or session effects.** Photos were collected class by class and the test split is not separated by farm, so the model should be evaluated on photos from a farm that is not in the dataset.
 7. **The costs, base rate and review accuracy are all assumptions**, and the reviewer is assumed to be perfect. These should be replaced with the farm's real PCR price, the vet's rate and historical outbreak losses. The dashboard already accepts new cost and base-rate figures live.
-8. **Training was capped at 30 epochs.** Validation mAP was still rising slightly and early stopping never fired, so a longer run (for example, 60 epochs with patience 10) using the same settings, compared on the same test split, would be worth trying.
+
